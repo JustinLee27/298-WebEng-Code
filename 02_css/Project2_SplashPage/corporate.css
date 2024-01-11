@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
+
+/*CSS variables
+- relatively new but has wide support
+- set all variables on the body so we can use throughout all elements
+- to set a value to a variable: --variable_name: variable_value
+- to access the value later: var(--variable_name)
+
+*/
+
 body {
+  /* --variable_name: variable_value */
   --primary: #2249bd;
   --background: white;
   --secondary: #383b42;
@@ -9,6 +19,7 @@ body {
 }
 
 .logo {
+  /* select image tag, override the src attribute*/
   content: url("https://i.pinimg.com/originals/ea/53/3e/ea533ecbfd904d9f49e404a2813daf93.png");
 }
 
